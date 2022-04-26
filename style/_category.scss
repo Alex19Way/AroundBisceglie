@@ -1,0 +1,75 @@
+.category{
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    background-image: url(../immagini/map-pattern.svg);
+    background-repeat: none;
+    background-position: center;
+    transform: translateY(-20px);
+    border-radius: 4rem; 
+  }
+    .category-container{
+        border: solid 1px black;
+        min-height: 60vw;
+        max-width: 60vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-gap: 2rem;
+    }
+  
+    .category button{
+      border: none;
+      padding: 6rem 10rem;
+      border-radius: 2rem;
+      color: white;
+      font-size: large;
+      border: rgb(229, 14, 229) 2px solid;
+    }
+    .category button:hover{
+      cursor: pointer;
+    }
+    
+    .btn-intra{
+      grid-column-start: 1;
+      grid-column-end:3;
+      background-image: url(../immagini/intrattenimento.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .btn-spiaggia{
+      grid-column-start: 3;
+      grid-column-end:4;
+      background-image: url(../immagini/spiaggia.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .btn-monu{
+      grid-column-start: 1;
+      grid-column-end:2;
+      background-image: url(../immagini/monumenti.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .btn-risto{
+      grid-column-start: 2;
+      grid-column-end:4;
+      background-image: url(../immagini/ristoro.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .btn-att{
+      grid-column-start: 1;
+      grid-column-end:4;
+      background-image: url(../immagini/attivita-comm.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .categorie-text{
+      background-color: #4e76f4;
+      
+    }

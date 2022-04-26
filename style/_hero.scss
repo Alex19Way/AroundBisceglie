@@ -1,0 +1,126 @@
+
+.hero{
+    min-height: 100vh;
+    background-image: url(../immagini/sfondo.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .hero-container{
+    max-width: 25vw;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        min-width: 150px;
+        padding: 1rem 9rem;
+        border-radius: 1rem;
+        border: none; 
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+        background-color: #4e76f4;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        }
+        button:hover{
+        background-color: #2c428a;
+        }
+  }
+  
+    .logo{
+      width: 25vw;
+      filter: drop-shadow(2px 2px 5px black);
+    }
+    .intro{
+      color: white;
+      text-align: center;
+      width: 100%;
+      margin: 2rem 0rem;
+      font-size: 1.5rem;
+    }
+    .search-icon{
+        position: absolute;
+    }
+    
+    .search{
+        border:none;
+        font-size:1.5rem;
+        height:2rem;
+        border-radius: 1rem;
+        outline:solid #fc0 0;
+        padding:1rem;
+        transition: all 0.5s ease-out;
+        width:100%;
+        z-index:1;
+        background: transparent;
+          &:focus {
+            background-color: white;
+            transform: translateY(-60vh);
+          }
+
+    }
+    .search-container{
+      position: absolute;
+      top: 5%;
+      height: 90vh;
+      width: 70vw;
+      background-color: #fbbc31;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: example 1s ease;
+    }
+    @keyframes example {
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+
+
+    .search-area{
+      display: block;
+      background-color: white;
+      height: 60vh;
+      width: 90%;
+      color: black;
+      z-index: 2;
+      border-radius: 1rem;
+    }
+    .hide{display: none; }
+
+
+
+
+
+
+
+
+
+
+  
+  
+  @media screen and (max-width: 1366px){
+    .apertura-container{
+      max-width: 60vw;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .apertura{
+      background-image: url(../immagini/sfondo-mobile.jpg);
+  }
+  .apertura-container{
+    min-height: 20vh;
+  }
+  
+  }
